@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>
+        {% block title %}
+            Recowork Titleless
+        {% endblock title %}
+    </title>
+
+    <!-- Website description -->
+    <meta name="description" content="Description du site">
+
+    <!-- Bootstrap -->
+    <link href="{% static 'recowork/css/style.css' %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <!-- <object type="image/svg+xml" data="images/aleotech-logo-full.svg">Aleotech</object> -->
+
+  <body>
+
+    {% block header %}
+        <header>
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="{% url 'recowork:home' %}"><img src="{% static 'recowork/images/recowork-logo.png'  %}" alt="RecoWork"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control search-bar" placeholder="Search">
+                </div>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="{% url 'recowork:home' %}"> <span>Income</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Jobs</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{% url 'recowork:find_jobs' %}"><span>Find jobs</span></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="saved-jobs.html?notfound"><span>Saved jobs</span></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="job-history.html?notfound"><span>Jobs history</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'recowork:connections' %}"><span>Connections</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>My account</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{% url 'recowork:profile' %}"><span>Profile</span></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="{% url 'recowork:preferences' %}"><span>Preferences</span></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="messages.html?notfound"><span>Messages</span></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="logoff.html?notimplemented"><span>Log off</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+    {% endblock header %}
+
+    <main>
+      <div class="content">
+        {% block content %}
+
+        {% endblock content %}
+
+        {% block footer %}
+            <section class="footer col-xs-12">
+              <span>(c) 2017 Recom</span>
+            </section>
+        {% endblock footer %}
+      </div>
+    </main>
+
+
+    <script src="{% static 'recowork/js/jquery.js' %}"></script>
+    <script src="{% static 'recowork/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'recowork/js/custom.js' %}"></script>
+  </body>
+</html>

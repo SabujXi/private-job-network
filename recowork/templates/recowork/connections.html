@@ -1,0 +1,170 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Connections
+{% endblock title %}
+
+{% block content %}
+        <section class="connections col-xs-12">
+          <div class="panel-container">
+            <div class="panel panel-default">
+              <div class="panel-heading">Your connections
+                <div class="tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#suggestions" aria-controls="suggestions" role="tab" data-toggle="tab">Suggestions</a></li>
+                    <li role="presentation"><a href="#existing" aria-controls="existing" role="tab" data-toggle="tab">Existing</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="suggestions">
+                  <div class="panel-body">
+                    <input type="text" class="form-control search-bar" placeholder="Search">
+
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="existing">
+                  <div class="panel-body">
+                    <input type="text" class="form-control search-bar" placeholder="Search">
+
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+                    <div class="person-block col-xs-12">
+                      <div class="col-xs-6 col-sm-2 col-1">
+                        <img src="{% static 'recowork/images/profile-steve.png' %}" alt="">
+                      </div>
+                      <div class="col-xs-6 col-sm-3 col-2">
+                        <div class="user-infos">
+                          <span class="user-full-name">Arjen van Gaal</span>
+                          <span class="job-title">Frontend Developer at Bynder</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-3">
+                        <a href="" class="blue-button type-2">Message</a>
+                        <a href="" class="blue-button type-1">Recommend</a>
+                        <img src="{% static 'recowork/images/ellipsis.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+{% endblock content %}

@@ -1,0 +1,200 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Find Jobs
+{% endblock title %}
+
+{% block content %}
+
+        <section class="available-jobs col-xs-12">
+          <div class="panel-container">
+            <div class="panel panel-default">
+              <div class="panel-heading">Available jobs
+                <div class="tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#short-term" aria-controls="short-term" role="tab" data-toggle="tab">Short-term</a></li>
+                    <li role="presentation"><a href="#long-term" aria-controls="long-term" role="tab" data-toggle="tab">Long-term</a></li>
+                  </ul>
+                </div>
+                <div class="switch">
+                  <span class="switch-desc">Show all matching jobs</span>
+                  <img src="{% static 'recowork/images/switch-off.png' %}" alt="">
+                </div>
+              </div>
+
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="short-term">
+                  <div class="panel-body">
+                    <div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div><div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="long-term">
+                  <div class="panel-body">
+                    <div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 panel-container">
+                      <div class="panel panel-default height-fixed-315 jobs-panel">
+                        <div class="panel-body">
+                          <a href="{% url 'recowork:job_details' %}"></a>
+                          <span class="closing-icon"><img src="{% static 'recowork/images/closing-icon.png' %}" alt=""></span>
+                          <span class="matched-text"><span>88% </span>match</br>Recommended by Jan van Dijk</span>
+                          <img class="logo" src="{% static 'recowork/images/logo-squared-empty.png' %}" alt="">
+                          <span class="company-info">Frontend Developper Company</span>
+                          <span class="when-date">2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+{% endblock content %}

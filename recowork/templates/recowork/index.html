@@ -1,0 +1,199 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block title %} ReCoWork Home {% endblock %}
+
+{% block content %}
+        <section class="recommendations col-xs-12 col-md-8">
+          <div class="panel-container">
+            <div class="panel panel-default height-fixed-550">
+              <div class="panel-heading">Your recommendations</div>
+
+              <div class="panel-body">
+                <div class="form-group">
+                  <input class="search-bar" type="text" class="form-control" placeholder="Search">
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Bonus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/profile-steve.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Steve Thijssen</span>
+                            <span class="job-company">Marketing Expert</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Next payment on July 1st, 2017</span></td>
+                        <td class="column-3"><span>$200,-</span></td>
+                      </tr>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/profile-steve.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Steve Thijssen</span>
+                            <span class="job-company">Marketing Expert</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Next payment on July 1st, 2017</span></td>
+                        <td class="column-3"><span>$200,-</span></td>
+                      </tr>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/profile-steve.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Steve Thijssen</span>
+                            <span class="job-company">Marketing Expert</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Next payment on July 1st, 2017</span></td>
+                        <td class="column-3"><span>$200,-</span></td>
+                      </tr>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/profile-steve.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Steve Thijssen</span>
+                            <span class="job-company">Marketing Expert</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Next payment on July 1st, 2017</span></td>
+                        <td class="column-3"><span>$200,-</span></td>
+                      </tr>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/profile-steve.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Steve Thijssen</span>
+                            <span class="job-company">Marketing Expert</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Next payment on July 1st, 2017</span></td>
+                        <td class="column-3"><span>$200,-</span></td>
+                      </tr>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/profile-steve.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Steve Thijssen</span>
+                            <span class="job-company">Marketing Expert</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Next payment on July 1st, 2017</span></td>
+                        <td class="column-3"><span>$200,-</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="jobs col-xs-12 col-md-8">
+          <div class="panel-container">
+            <div class="panel panel-default height-fixed-550">
+              <div class="panel-heading">Your jobs</div>
+
+              <div class="panel-body">
+                <div class="form-group">
+                  <input class="search-bar" type="text" class="form-control" placeholder="Search">
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Job</th>
+                        <th>Payment Date</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/logo-empty.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Frontend Dev.</span>
+                            <span class="job-company">Company</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Waiting for reaction</span></td>
+                        <td class="column-3"><span>$750,-</span></td>
+                      </tr>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/logo-empty.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Frontend Dev.</span>
+                            <span class="job-company">Company</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Paid on 07/03/2017</span></td>
+                        <td class="column-3"><span>$750,-</span></td>
+                      </tr>
+                      <tr>
+                        <td class="profile">
+                          <span class="picture-logo"><img src="{% static 'recowork/images/logo-empty.png' %}" alt=""></span>
+                          <span class="description">
+                            <span class="name">Frontend Dev.</span>
+                            <span class="job-company">Company</span>
+                          </span>
+                        </td>
+                        <td class="column-2"><span>Active until 06/08/2017</span></td>
+                        <td class="column-3"><span>$750,-</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="user-panel col-xs-12 col-md-4">
+          <div class="panel-container">
+            <div class="panel panel-default height-fixed-550">
+              <div class="panel-heading"><span class="picture-logo"><img src="{% static 'recowork/images/profile-arjen.png' %}" alt=""></span><span class="user-full-name">Arjen van Gaal</span><span class="job-title">Frontend Developer at Bynder</span></div>
+
+              <div class="panel-body">
+                <div class="stats">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="circular-progress"></div>
+                    <span class="description">Rec. Score</span>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <span class="amount">326</span>
+                    <span class="description">Connection(s)</span>
+                  </div>
+                </div>
+                <div class="bonus">
+                  <div class="content">
+                    <span class="description">bonus this month</span>
+                    <span class="amount bigger">$105-,</span>
+                  </div>
+
+                  <div class="content">
+                    <span class="description">future bonus left</span>
+                    <span class="amount">$540-,</span>
+                  </div>
+
+                  <div class="content">
+                    <span class="description">total income</span>
+                    <span class="amount">$1755-,</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+{% endblock content %}

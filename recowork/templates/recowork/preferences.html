@@ -1,0 +1,84 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Preferences
+{% endblock title %}
+
+{% block content %}
+        <section class="preferences col-xs-12">
+          <div class="panel-container">
+            <div class="panel panel-default">
+              <div class="panel-heading">Your preferences
+              </div>
+
+              <div class="panel-body">
+                <div class="section email col-xs-12">
+                  <div class="col-xs-12 col-sm-9 col-md-8">
+                    <div class="group">
+                      <span class="section-name">Email notifications</span>
+                      <span class="description">Allow Recowork to send you emails and keep you updated.</span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-button">
+                    <div class="btn-group">
+                      <button class="blue-button type-2" data-toggle="dropdown">Once a week <span class="caret"></span></button>
+
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                         <li><a tabindex="-1" href="#">Once a month</a></li>
+                         <li><a tabindex="-1" href="#">Important updates</a></li>
+                         <li class="divider"></li>
+                         <li><a tabindex="-1" href="#">Never</a></li>
+                         <li><a tabindex="-1" href="#">Always</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="section finder-fee col-xs-12">
+                  <div class="col-xs-12 col-sm-9 col-md-8">
+                    <div class="group">
+                      <span class="section-name">Finder's fee</span>
+                      <span class="description">Offer some money to your connections to find jobs for you.</span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-button">
+                    <div class="btn-group">
+                      <button class="blue-button type-2" data-toggle="dropdown">5 $ <span class="caret"></span></button>
+
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                         <li><a tabindex="-1" href="#">10 $</a></li>
+                         <li><a tabindex="-1" href="#">15 $</a></li>
+                         <li class="divider"></li>
+                         <li><a tabindex="-1" href="#">0 $</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="section moment-fee col-xs-12">
+                  <div class="col-xs-12 col-sm-9 col-md-8">
+                    <div class="group">
+                      <span class="section-name">Moment of fee</span>
+                      <span class="description">Choose if you want to pay the finder’s fee when you apply or after you’ve been invited for a job interview.</span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-button">
+                    <div class="btn-group">
+                      <button class="blue-button type-2" data-toggle="dropdown">On job invite <span class="caret"></span></button>
+
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                         <li><a tabindex="-1" href="#">After job is finished</a></li>
+                         <li><a tabindex="-1" href="#">After contract opened</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 save-container">
+                  <a href="#" class="blue-button type-1 save-button">Save</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+{% endblock content %}
